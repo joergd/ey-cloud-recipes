@@ -8,6 +8,7 @@
 # require_recipe "sphinx"
 
 require_recipe "timezone"
+require_recipe "delayed_job"
 
 #uncomment to turn on memcached
 require_recipe "memcached"
