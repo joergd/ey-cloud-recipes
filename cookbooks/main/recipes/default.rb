@@ -8,7 +8,7 @@
 # require_recipe "sphinx"
 
 #uncomment to turn on memcached
-# require_recipe "memcached"
+require_recipe "memcached"
 
 #uncomment ot run the riak recipe
 # require_recipe "riak"
@@ -46,7 +46,7 @@
 #uncomment to run the redis recipe
 #require_recipe "redis"
 
-#require_recipe "logrotate"
+require_recipe "logrotate"
 #
 #uncomment to use the solr recipe
 #require_recipe "solr"
@@ -77,7 +77,7 @@
 #end
 
 #uncomment to include the newrelic_server_monitoring recipe
-#require_recipe "newrelic_server_monitoring"
+require_recipe "newrelic_server_monitoring"
 
 #enable Extension modules for a given Postgresql database
 # if ['solo','db_master', 'db_slave'].include?(node[:instance_role])
