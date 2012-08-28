@@ -9,9 +9,10 @@
 
 require_recipe "timezone"
 require_recipe "delayed_job"
-
-#uncomment to turn on memcached
 require_recipe "memcached"
+require_recipe "redis"
+require_recipe "logrotate"
+require_recipe "newrelic_server_monitoring"
 
 #uncomment ot run the riak recipe
 # require_recipe "riak"
@@ -46,10 +47,6 @@ require_recipe "memcached"
 #uncomment to run the resque-scheduler recipe
 # require_recipe "resque-scheduler"
 
-#uncomment to run the redis recipe
-#require_recipe "redis"
-
-require_recipe "logrotate"
 #
 #uncomment to use the solr recipe
 #require_recipe "solr"
@@ -78,9 +75,6 @@ require_recipe "logrotate"
 #es_plugin "transport-memcached" do
 #  action :install
 #end
-
-#uncomment to include the newrelic_server_monitoring recipe
-require_recipe "newrelic_server_monitoring"
 
 #enable Extension modules for a given Postgresql database
 # if ['solo','db_master', 'db_slave'].include?(node[:instance_role])
