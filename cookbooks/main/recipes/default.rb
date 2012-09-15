@@ -13,6 +13,7 @@ require_recipe "redis"
 require_recipe "logrotate"
 require_recipe "newrelic_server_monitoring"
 require_recipe "whenever"
+require_recipe "resque"
 
 #uncomment ot run the riak recipe
 # require_recipe "riak"
