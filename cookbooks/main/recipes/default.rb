@@ -8,7 +8,6 @@
 # require_recipe "sphinx"
 
 require_recipe "timezone"
-require_recipe "delayed_job"
 require_recipe "redis"
 require_recipe "logrotate"
 require_recipe "newrelic_server_monitoring"
